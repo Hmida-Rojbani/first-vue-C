@@ -15,5 +15,10 @@ public class IndexCtrl {
 		model.addAttribute("welcome", welcome);
 		return "index";
 	}
+	
+	@GetMapping("/add/user")
+	public String getInnerPage() {
+		return "inner/inner-page";
+	}
 
 }
